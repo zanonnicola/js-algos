@@ -1,0 +1,40 @@
+{
+  "name": "js-algos",
+  "version": "0.0.1",
+  "description": "Common algorithms and data structure in JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": [
+    "js",
+    "algorithms",
+    "data",
+    "structures"
+  ],
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!**/vendor/**"
+    ]
+  },
+  "xo": {
+    "prettier": true,
+    "ignore": [
+      "**/*.test.js"
+    ]
+  },
+  "author": "Nicola Zanon",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^23.5.0",
+    "prettier": "1.14.2",
+    "xo": "^0.22.0"
+  }
+}
